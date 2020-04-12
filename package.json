@@ -8,17 +8,17 @@
   "scripts": {
     "clean": "lerna clean -f --yes && rm -rf node_modules",
     "reset": "yarn run clean && yarn",
-    "app1": "cd apps/cra-app1 && yarn start",
-    "app2": "cd apps/cra-app2 && yarn start",
-    "app3": "cd apps/cra-app3 && yarn start"
+    "vscode-webview": "cd client/vscode-webview && yarn start",
+    "website": "cd client/website && yarn start"
   },
   "dependencies": {},
   "devDependencies": {
-    "lerna": "^2.6.0"
+    "lerna": "^2.6.0",
+    "react-router-dom": "^5.1.2"
   },
   "workspaces": [
-    "apps/*",
-    "comps/*",
-    "cra-comps/*"
+    "client/*",
+    "client/vscode-webview/*",
+    "client/website/*"
   ]
 }
